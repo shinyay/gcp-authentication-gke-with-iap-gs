@@ -16,6 +16,13 @@ Overview
 - **IPv4 Address**
   - `Reserved External IP Address`
 
+#### Configure Registrar (Freenom)
+- Services
+  - My Domain
+    - Manage Domain
+      - Management Tools
+        - Nameservers
+
 ### Create GKE Cluster
 #### Enable GKE API
 ```
