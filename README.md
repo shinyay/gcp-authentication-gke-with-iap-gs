@@ -3,6 +3,9 @@
 Overview
 
 ## Description
+### Prerequisite
+#### Extenal IP Address
+
 ### Create GKE Cluster
 #### Enable GKE API
 ```
