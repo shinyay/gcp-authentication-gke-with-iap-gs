@@ -6,11 +6,16 @@ Overview
 ### Prerequisite
 #### Extenal IP Address
 
+#### Cloud DNS
+
+![cliud-dns](https://user-images.githubusercontent.com/3072734/99962127-f616bf00-2dd2-11eb-89de-67c7b4be2dc1.png)
+
 ### Create GKE Cluster
 #### Enable GKE API
 ```
 $ gcloud services enable container.googleapis.com
 ```
+
 
 #### Create GKE Cluster
 ```
