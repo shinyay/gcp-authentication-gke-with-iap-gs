@@ -23,6 +23,22 @@ Overview
       - Management Tools
         - Nameservers
 
+#### Confirm A Record
+```
+$ dig YOUR-DOMAIN
+
+;; ANSWER SECTION:
+YOUR.DOMAIN.		300	IN	A	11.22.333.444
+```
+
+```
+$ nslookup YOUR-DOMAIN
+
+Non-authoritative answer:
+Name:	YOUR.DOMAIN
+Address: 11.22.333.444
+```
+
 ### Create GKE Cluster
 #### Enable GKE API
 ```
