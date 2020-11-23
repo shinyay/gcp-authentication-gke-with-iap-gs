@@ -9,6 +9,11 @@ Overview
 $ gcloud services enable container.googleapis.com
 ```
 
+#### Create GKE Cluster
+```
+$ gcloud container clusters create iap-gs-cluster --scopes cloud-platform --num-nodes 1 --enable-stackdriver-kubernetes --zone us-central1-c
+```
+
 ## Demo
 
 ## Features
