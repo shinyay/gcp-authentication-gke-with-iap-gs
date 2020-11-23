@@ -10,6 +10,12 @@ Overview
 
 ![cliud-dns](https://user-images.githubusercontent.com/3072734/99962127-f616bf00-2dd2-11eb-89de-67c7b4be2dc1.png)
 
+##### Add Record Set
+- **DNS Name**
+  - `Your Domain`
+- **IPv4 Address**
+  - `Reserved External IP Address`
+
 ### Create GKE Cluster
 #### Enable GKE API
 ```
