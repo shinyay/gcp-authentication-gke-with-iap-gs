@@ -150,7 +150,7 @@ $ curl -X GET https://YOUR-DOMAIN/hello
 
 #### Create Kubernetes Secret for OAuth Client
 ```
-$ kubectl create secret generic my-secret \
+$ kubectl create secret generic secret-for-oauth \
     --from-literal=client_id=<CLIENT_ID_KEY> \
     --from-literal=client_secret=<CLIENT_SECRET_KEY>
 ```
