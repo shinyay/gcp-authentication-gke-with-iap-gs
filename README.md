@@ -116,7 +116,12 @@ $ curl -X GET https://YOUR-DOMAIN/hello
 
 ### Configure OAuth Consent Screen
 - [OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent?_ga=2.73243667.145231038.1606091012-983599867.1599137884&_gac=1.249734004.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
-
+  - **App name**
+    - Application Display Name
+  - **User support email**
+    - You email
+  - **Developer contact information**
+    - Your email
 
 
 ## Demo
