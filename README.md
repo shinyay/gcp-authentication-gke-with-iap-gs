@@ -100,6 +100,14 @@ Status:
   Certificate Name:    mcrt-25e6f0ae-cc33-4dd0-be7c-c1bfcad6f555
   Certificate Status:  Provisioning
 ```
+↓
+About 15 mins
+↓
+```
+Status:
+  Certificate Name:    mcrt-25e6f0ae-cc33-4dd0-be7c-c1bfcad6f555
+  Certificate Status:  Active
+```
 
 ## Demo
 
