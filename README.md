@@ -146,7 +146,9 @@ $ curl -X GET https://YOUR-DOMAIN/hello
 ### Add Members to Identity-Aware Proxy
 - [IAP](https://console.cloud.google.com/security/iap?_ga=2.79167380.145231038.1606091012-983599867.1599137884&_gac=1.222007146.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
 
+
 ### Configure BackendConfig
+- [Reference]{https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features#iap}
 
 #### Create Kubernetes Secret for OAuth Client
 ```
@@ -154,6 +156,10 @@ $ kubectl create secret generic secret-for-oauth \
     --from-literal=client_id=<CLIENT_ID_KEY> \
     --from-literal=client_secret=<CLIENT_SECRET_KEY>
 ```
+
+#### Configure BackendConfig
+- For GKE versions 1.16.8-gke.3 and higher: `cloud.google.com/v1`
+- For earlier GKE version: `cloud.google.com/v1beta1`
 
 ## Demo
 
