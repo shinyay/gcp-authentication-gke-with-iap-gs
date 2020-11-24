@@ -56,6 +56,11 @@ $ gcloud container clusters create iap-gs-cluster --scopes cloud-platform --num-
 $ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
 ```
 
+### Deploy app to GKE
+```
+$ sed -e "s|GCP_PROJECT|"(gcloud config get-value project)"|g" k8s/app.yml | kubectl apply -f -
+```
+
 ## Demo
 
 ## Features
