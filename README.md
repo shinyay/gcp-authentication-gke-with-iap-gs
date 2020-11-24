@@ -6,7 +6,7 @@ Overview
 ### Prerequisite
 #### Extenal IP Address
 ```
-$ gcloud compute addresses create <ADDRESS_NAME> --region us-central1
+$ gcloud compute addresses create <ADDRESS_NAME> --global
 ```
 
 #### List Address
