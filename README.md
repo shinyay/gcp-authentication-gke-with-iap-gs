@@ -162,6 +162,8 @@ $ kubectl create secret generic secret-for-oauth \
     --from-literal=client_secret=<CLIENT_SECRET_KEY>
 ```
 
+- [CLIENT_ID/CLIENT_SECRET](https://console.cloud.google.com/apis/credentials?_ga=2.82107286.145231038.1606091012-983599867.1599137884&_gac=1.123965048.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
+
 #### Configure BackendConfig
 - For GKE versions 1.16.8-gke.3 and higher: `cloud.google.com/v1`
 - For earlier GKE version: `cloud.google.com/v1beta1`
