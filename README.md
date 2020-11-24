@@ -146,6 +146,15 @@ $ curl -X GET https://YOUR-DOMAIN/hello
 ### Add Members to Identity-Aware Proxy
 - [IAP](https://console.cloud.google.com/security/iap?_ga=2.79167380.145231038.1606091012-983599867.1599137884&_gac=1.222007146.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
 
+### Configure BackendConfig
+
+#### Create Kubernetes Secret for OAuth Client
+```
+$ kubectl create secret generic my-secret \
+    --from-literal=client_id=<CLIENT_ID_KEY> \
+    --from-literal=client_secret=<CLIENT_SECRET_KEY>
+```
+
 ## Demo
 
 ## Features
