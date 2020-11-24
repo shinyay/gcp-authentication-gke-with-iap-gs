@@ -51,6 +51,11 @@ $ gcloud services enable container.googleapis.com
 $ gcloud container clusters create iap-gs-cluster --scopes cloud-platform --num-nodes 1 --enable-stackdriver-kubernetes --zone us-central1-c
 ```
 
+### Build Container Image
+```
+$ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
+```
+
 ## Demo
 
 ## Features
