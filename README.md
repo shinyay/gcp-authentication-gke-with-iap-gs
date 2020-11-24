@@ -123,6 +123,8 @@ $ curl -X GET https://YOUR-DOMAIN/hello
   - **Developer contact information**
     - Your email
 
+### OAuth Credentials
+- [Credentials](https://console.cloud.google.com/apis/credentials?_ga=2.7746482.145231038.1606091012-983599867.1599137884&_gac=1.219319915.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
 
 ## Demo
 
