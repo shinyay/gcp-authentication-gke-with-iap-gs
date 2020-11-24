@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: syanagihara-cf-ip # Name of Static IP Address
+    networking.gke.io/managed-certificates: certificate
+    beta.cloud.google.com/backend-config: '{"default": "config-default"}'
+  name: ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: app
+              servicePort: 8080
+            path: /*
+
+---
+apiVersion: networking.gke.io/v1beta1
+kind: ManagedCertificate
+metadata:
+  name: certificate
+spec:
+  domains:
+    - syanagihara.cf # Name of Your Domain
