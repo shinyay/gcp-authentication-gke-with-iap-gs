@@ -9,12 +9,3 @@ spec:
   backend:
     serviceName: app
     servicePort: 8080
-
----
-apiVersion: networking.gke.io/v1beta2
-kind: ManagedCertificate
-metadata:
-  name: certificate
-spec:
-  domains:
-    - syanagihara.cf # Name of Your Domain
