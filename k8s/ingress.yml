@@ -1,10 +1,10 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
+  name: ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: syanagihara-cf-ip # Name of Static IP Address
     networking.gke.io/managed-certificates: certificate
-  name: ingress
 spec:
   backend:
     serviceName: app
