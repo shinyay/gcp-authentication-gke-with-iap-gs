@@ -109,6 +109,13 @@ Status:
   Certificate Status:  Active
 ```
 
+#### Confirm HTTPS Access
+```
+$ curl -X GET https://YOUR-DOMAIN/hello
+```
+
+
+
 ## Demo
 
 ## Features
