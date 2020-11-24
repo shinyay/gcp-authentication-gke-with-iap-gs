@@ -69,11 +69,18 @@ $ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
 $ sed -e "s|GCP_PROJECT|"(gcloud config get-value project)"|g" k8s/deploy-app.yml | kubectl apply -f -
 ```
 
+### Create Managed Certificate
+- `k8s/ingress.yml`
+  - YOUR DOMAIN
+
+```
+$ kubectl apply -f k8s/certificate.yml
+```
+
 ### Create Ingress
 #### Configure Ingress
 - `k8s/ingress.yml`
-- YOUR STATIC IP ADDRESS NAME
-- YOUR DOMAIN
+  - YOUR STATIC IP ADDRESS NAME
 
 ```yaml
 apiVersion: extensions/v1beta1
