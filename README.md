@@ -5,6 +5,14 @@ Overview
 ## Description
 ### Prerequisite
 #### Extenal IP Address
+```
+$ gcloud compute addresses create <ADDRESS_NAME> --region us-central1
+```
+
+#### List Address
+```
+$ gcloud compute addresses list
+```
 
 #### Cloud DNS
 
@@ -59,6 +67,30 @@ $ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
 ### Deploy app to GKE
 ```
 $ sed -e "s|GCP_PROJECT|"(gcloud config get-value project)"|g" k8s/app.yml | kubectl apply -f -
+```
+
+### Create Ingress
+#### Configure Ingress
+- `k8s/ingress.yml`
+- YOUR STATIC IP ADDRESS NAME
+- YOUR DOMAIN
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: YOUR_IP_NAME # Name of Static IP Address
+:
+:
+---
+apiVersion: networking.gke.io/v1beta1
+kind: ManagedCertificate
+metadata:
+  name: certificate
+spec:
+  domains:
+    - YOUR_DOMAIN_NAME # Name of Your Domain
 ```
 
 ## Demo
