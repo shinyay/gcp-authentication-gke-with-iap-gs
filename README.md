@@ -78,26 +78,16 @@ $ kubectl apply -f k8s/certificate.yml
 ```
 
 ### Create Ingress
-#### Configure Ingress
 - `k8s/ingress.yml`
   - YOUR STATIC IP ADDRESS NAME
 
-```yaml
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  annotations:
-    kubernetes.io/ingress.global-static-ip-name: YOUR_IP_NAME # Name of Static IP Address
-:
-:
----
-apiVersion: networking.gke.io/v1beta1
-kind: ManagedCertificate
-metadata:
-  name: certificate
-spec:
-  domains:
-    - YOUR_DOMAIN_NAME # Name of Your Domain
+```
+$ kubectl apply -f k8s/ingress.yml
+```
+
+#### Confirm Ingress
+```
+$ kubectl get ingress
 ```
 
 ## Demo
