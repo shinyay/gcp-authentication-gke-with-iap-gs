@@ -1,6 +1,8 @@
 # Identity-Aware Proxy for GKE Getting Started
 
-Overview
+`Identity-Aware Proxy` lets you establish a central authorization layer for applications accessed by HTTPS, so you can use an application-level access control model instead of relying on network-level firewalls.
+
+![IAP](https://cloud.google.com/iap/images/iap-load-balancer.png)
 
 ## Description
 ### Prerequisite
