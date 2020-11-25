@@ -5,6 +5,13 @@
 ![IAP](https://cloud.google.com/iap/images/iap-load-balancer.png)
 
 ## Description
+
+|Functions|Identiy-Aware Proxy|VPN|
+|---------|-------------------|---|
+|Authentication|Cloud IAP|VPN Client|
+|Connection|Google Account Cerdential|Login|
+|Encrypt|HTTPS with SSL Certs for LB|Encrypted Communication Path|
+
 ### Prerequisite
 #### Extenal IP Address
 ```
