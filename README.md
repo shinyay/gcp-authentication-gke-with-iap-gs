@@ -39,7 +39,7 @@ $ gcloud compute addresses list
 - **IPv4 Address**
   - `Reserved External IP Address`
 
-#### Configure Registrar (Freenom)
+#### 2.2. Configure Registrar (Example: [Freenom](https://my.freenom.com/))
 - Services
   - My Domain
     - Manage Domain
