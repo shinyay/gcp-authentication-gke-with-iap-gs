@@ -22,16 +22,17 @@ In the case of `Ingress`, you should choose **Global** IP Address, not *Regional
 $ gcloud compute addresses create <ADDRESS_NAME> --global
 ```
 
-#### List Address
+##### List Address
 ```
 $ gcloud compute addresses list
 ```
 
-#### Cloud DNS
+#### 0.2. Add Your Domain Record Set to Cloud DNS
 
-![cliud-dns](https://user-images.githubusercontent.com/3072734/99962127-f616bf00-2dd2-11eb-89de-67c7b4be2dc1.png)
+- [Cloud DNS](https://cloud.google.com/dns/docs/quickstart)
 
-##### Add Record Set
+![cloud-dns](https://user-images.githubusercontent.com/3072734/99962127-f616bf00-2dd2-11eb-89de-67c7b4be2dc1.png)
+
 - **DNS Name**
   - `Your Domain`
 - **IPv4 Address**
