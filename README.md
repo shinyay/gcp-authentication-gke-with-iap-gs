@@ -74,14 +74,13 @@ Address: 11.22.333.444
 $ host `YOUR-DOMAIN`
 ```
 
-### Create GKE Cluster
-#### Enable GKE API
+### 3. Create GKE Cluster
+#### 3.1 Enable GKE API
 ```
 $ gcloud services enable container.googleapis.com
 ```
 
-
-#### Create GKE Cluster
+#### 3.2. Create GKE Cluster
 ```
 $ gcloud container clusters create iap-gs-cluster --scopes cloud-platform --num-nodes 1 --enable-stackdriver-kubernetes --zone us-central1-c
 ```
