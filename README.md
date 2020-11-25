@@ -40,6 +40,14 @@ $ gcloud compute addresses list
   - `Reserved External IP Address`
 
 #### 2.2. Configure Registrar (Example: [Freenom](https://my.freenom.com/))
+
+```
+$ gcloud dns managed-zones list
+$ gcloud dns record-sets list --zone <MANAGED_ZONE>
+```
+
+Set NS Records to the following
+
 - Services
   - My Domain
     - Manage Domain
