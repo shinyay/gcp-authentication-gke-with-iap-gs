@@ -12,8 +12,12 @@
 |Connection|Google Account Cerdential|Login|
 |Encrypt|HTTPS with SSL Certs for LB|Encrypted Communication Path|
 
-### Prerequisite
-#### Extenal IP Address
+### 0. Prerequisite
+#### 0.1. Extenal IP Address
+
+Create Reserved Statuc IP Address for Ingress.
+In the case of `Ingress`, you should choose **Global** IP Address, not *Regional*
+
 ```
 $ gcloud compute addresses create <ADDRESS_NAME> --global
 ```
