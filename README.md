@@ -54,20 +54,24 @@ Set NS Records to the following
       - Management Tools
         - Nameservers
 
-#### Confirm A Record
+#### 2.3. Confirm A Record
 ```
-$ dig YOUR-DOMAIN
+$ dig `YOUR-DOMAIN`
 
 ;; ANSWER SECTION:
 YOUR.DOMAIN.		300	IN	A	11.22.333.444
 ```
 
 ```
-$ nslookup YOUR-DOMAIN
+$ nslookup `YOUR-DOMAIN`
 
 Non-authoritative answer:
 Name:	YOUR.DOMAIN
 Address: 11.22.333.444
+```
+
+```
+$ host `YOUR-DOMAIN`
 ```
 
 ### Create GKE Cluster
