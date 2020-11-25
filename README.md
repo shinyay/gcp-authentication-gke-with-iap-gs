@@ -12,8 +12,7 @@
 |Connection|Google Account Cerdential|Login|
 |Encrypt|HTTPS with SSL Certs for LB|Encrypted Communication Path|
 
-### 0. Prerequisite
-#### 0.1. Extenal IP Address
+### 1. Create Extenal IP Address
 
 Create Reserved Statuc IP Address for Ingress.
 In the case of `Ingress`, you should choose **Global** IP Address, not *Regional*
@@ -22,14 +21,16 @@ In the case of `Ingress`, you should choose **Global** IP Address, not *Regional
 $ gcloud compute addresses create <ADDRESS_NAME> --global
 ```
 
-##### List Address
+#### List Address
 ```
 $ gcloud compute addresses list
 ```
 
-#### 0.2. Add Your Domain Record Set to Cloud DNS
+### 2. Add Your Domain to Cloud DNS
 
-- [Cloud DNS](https://cloud.google.com/dns/docs/quickstart)
+- [Cloud DNS Quickstart](https://cloud.google.com/dns/docs/quickstart)
+
+#### 2.1. Create DNS zone
 
 ![cloud-dns](https://user-images.githubusercontent.com/3072734/99962127-f616bf00-2dd2-11eb-89de-67c7b4be2dc1.png)
 
