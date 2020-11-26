@@ -233,24 +233,22 @@ Configure the following items.
   - **Developer contact information**
     - Your email
 
-### OAuth Credentials
+#### 7.2. Create OAuth Credentials
 - [Credentials](https://console.cloud.google.com/apis/credentials?_ga=2.7746482.145231038.1606091012-983599867.1599137884&_gac=1.219319915.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
 
-- Create Credentials -> **OAuth client ID**
-  - **Application Type**
-    - `Web Application`
-  - **Name**
-    - `OAuth Cliend ID Display Name`
+<details><summary>Create Credentials -> OAuth client ID</summary><div>
+<img width="" alt="input-source" src="https://user-images.githubusercontent.com/3072734/100300661-d998a380-2fd9-11eb-971e-b7f9522d7aaf.png">
+</div></details>
 
-`CREATE`
+- **Application Type**
+  - `Web Application`
+- **Name**
+  - `OAuth Cliend ID Display Name`
 
-- Cliend ID -> Detail
-  - **Authorized redirect URIs**
-    - `https://iap.googleapis.com/v1/oauth/clientIds/<CLIENT_ID>:handleRedirect`
+![OAuth Client ID](https://user-images.githubusercontent.com/3072734/100301172-f41f4c80-2fda-11eb-8c6e-912260c4f1dd.png)
 
-`SAVE`
 
-- Download JSON
+
 
 ### Add Members to Identity-Aware Proxy
 - [IAP](https://console.cloud.google.com/security/iap?_ga=2.79167380.145231038.1606091012-983599867.1599137884&_gac=1.222007146.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
