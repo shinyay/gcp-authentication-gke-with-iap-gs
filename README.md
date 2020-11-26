@@ -155,6 +155,7 @@ spec:
 
 ```
 $ kubectl apply -f k8s/service-app.yml
+$ kubectl get services -o wide
 ```
 
 
