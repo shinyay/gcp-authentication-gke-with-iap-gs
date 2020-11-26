@@ -280,12 +280,24 @@ $ kubectl create secret generic secret-for-oauth \
 ```
 ```
 $ kubectl get secret
+$ kubectl describe secret
 ```
 
-
-#### Configure BackendConfig
+#### 7.6. Configure BackendConfig
 - For GKE versions 1.16.8-gke.3 and higher: `cloud.google.com/v1`
 - For earlier GKE version: `cloud.google.com/v1beta1`
+
+```yaml
+apiVersion: cloud.google.com/v1
+kind: BackendConfig
+metadata:
+  name: config-default
+spec:
+  iap:
+    enabled: true
+    oauthclientCredentials:
+      secretName: secret-for-oauth
+```
 
 ```
 $ kubectl apply -f k8s/backend-config.yml
