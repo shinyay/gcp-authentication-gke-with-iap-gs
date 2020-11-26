@@ -96,8 +96,8 @@ $ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
 $ sed -e "s|GCP_PROJECT|"(gcloud config get-value project)"|g" k8s/deploy-app.yml | kubectl apply -f -
 ```
 
-### Create Managed Certificate
-- `k8s/ingress.yml`
+### 5. Create Managed Certificate
+- `k8s/certificate.yml`
   - YOUR DOMAIN
 
 ```
