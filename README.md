@@ -266,17 +266,20 @@ ADD MEMBER as `Cloud IAP/IAP-secured Web App User`
 
 ![IAP-secured Web App User](https://user-images.githubusercontent.com/3072734/100075829-cb387380-2e83-11eb-9e6b-bbd4a91c3542.png)
 
-### Configure BackendConfig
+#### 7.5. Configure BackendConfig
 - [Reference]{https://cloud.google.com/kubernetes-engine/docs/how-to/ingress-features#iap}
 
-#### Create Kubernetes Secret for OAuth Client
+Create Kubernetes Secret for OAuth Client.
+
+You can retrieve <CLIENT_ID_KEY> and <CLIENT_SECRET_KEY> from [OAuth Credential](https://console.cloud.google.com/apis/credentials?_ga=2.82107286.145231038.1606091012-983599867.1599137884&_gac=1.123965048.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE) created before.
+
 ```
 $ kubectl create secret generic secret-for-oauth \
     --from-literal=client_id=<CLIENT_ID_KEY> \
     --from-literal=client_secret=<CLIENT_SECRET_KEY>
 ```
 
-- [CLIENT_ID/CLIENT_SECRET](https://console.cloud.google.com/apis/credentials?_ga=2.82107286.145231038.1606091012-983599867.1599137884&_gac=1.123965048.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
+
 
 #### Configure BackendConfig
 - For GKE versions 1.16.8-gke.3 and higher: `cloud.google.com/v1`
