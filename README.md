@@ -21,7 +21,7 @@ In the case of `Ingress`, you should choose **Global** IP Address, not *Regional
 $ gcloud compute addresses create <ADDRESS_NAME> --global
 ```
 
-#### List Address
+#### 1.1. List Address
 ```
 $ gcloud compute addresses list
 ```
@@ -164,12 +164,27 @@ $ kubectl apply -f k8s/service-app.yml
 $ kubectl get services -o wide
 ```
 
+#### 6.2. Create Ingress with Managed Certificate
+Replace `STATIC_IP` in [k8s/ingress.yml](k8s/ingress.yml)
 
-- `k8s/ingress.yml`
-  - YOUR STATIC IP ADDRESS NAME
+  - You can confirm your static ip address: `gcloud compute addresses list`
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: STATIC_IP
+    networking.gke.io/managed-certificates: certificate
+spec:
+  backend:
+    serviceName: app
+    servicePort: 8080
+```
 
 ```
-$ kubectl apply -f k8s/ingress.yml
+$ sed -e "s|STATIC_IP|XXXXX|g" k8s/ingress.yml | kubectl apply -f -
 ```
 
 #### Confirm Ingress
