@@ -321,6 +321,8 @@ metadata:
 $ kubectl apply -f k8s/service-app-backend-config.yml
 ```
 
+![toggle-on](https://user-images.githubusercontent.com/3072734/100313135-4cfcde00-2ff7-11eb-9a40-5a8bd7ca37ff.png)
+
 ## Demo
 
 ## Features
