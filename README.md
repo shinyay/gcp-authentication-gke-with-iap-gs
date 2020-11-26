@@ -85,6 +85,14 @@ $ gcloud services enable container.googleapis.com
 $ gcloud container clusters create iap-gs-cluster --scopes cloud-platform --num-nodes 1 --enable-stackdriver-kubernetes --zone us-central1-c
 ```
 
+#### 3.3. Confirg GKE Cluster
+```
+$ kubectl config current-context
+$ kubectl config get-clusters
+```
+
+
+
 ### 4. Deploy App Container to GKE
 ### 4.1. Build Container Image with Cloud Build
 ```
