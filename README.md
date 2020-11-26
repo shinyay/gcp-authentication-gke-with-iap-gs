@@ -135,7 +135,22 @@ spec:
 $ sed -e "s|YOUR_DOMAIN|XXXXX|g" k8s/certificate.yml | kubectl apply -f -
 ```
 
-### Create Ingress
+### 6. Create Ingress with Managed Certificate
+#### 6.1. Create NodePort to expose the App
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: app
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: app
+  type: NodePort
+```
 - `k8s/ingress.yml`
   - YOUR STATIC IP ADDRESS NAME
 
