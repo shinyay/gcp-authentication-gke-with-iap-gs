@@ -216,8 +216,15 @@ Status:
 $ curl -X GET https://YOUR-DOMAIN/hello
 ```
 
-### Configure OAuth Consent Screen
+### 7. Enable IAP for GKE
+- [Enabling IAP for GKE](https://cloud.google.com/iap/docs/enabling-kubernetes-howto)
+
+#### 7.1. Configure Configure OAuth Consent Screen
 - [OAuth Consent Screen](https://console.cloud.google.com/apis/credentials/consent?_ga=2.73243667.145231038.1606091012-983599867.1599137884&_gac=1.249734004.1604543893.CjwKCAiAv4n9BRA9EiwA30WND9tYKNMuLjYNlsSBrI4JO3KyW7Wkyj7T5SL10VmdwDs8jNxCe6vRoxoChh0QAvD_BwE)
+
+![oauth-consent-screen](https://user-images.githubusercontent.com/3072734/100300443-61ca7900-2fd9-11eb-9b73-d7074c624400.png)
+
+Configure the following items.
 
   - **App name**
     - Application Display Name
