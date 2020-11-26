@@ -308,6 +308,18 @@ $ kubectl get backendconfig
 $ kubectl describe backendconfig config-default
 ```
 
+#### 7.7. Associate NodePort with BackendConfig to trigger turn on IAP
+Add the following resources to `service-app.yml` : [(Added YAML)](k8s/service-app-backend-config.yml)
+
+```yaml
+metadata:
+  annotations:
+    beta.cloud.google.com/backend-config: '{"default": "config-default"}'
+```
+
+```
+$ kubectl apply -f k8s/service-app-backend-config.yml
+```
 
 ## Demo
 
