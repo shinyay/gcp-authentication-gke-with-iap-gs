@@ -129,7 +129,7 @@ spec:
 ```
 
 ```
-$ kubectl apply -f k8s/certificate.yml
+$ sed -e "s|YOUR_DOMAIN|XXXXX|g" k8s/certificate.yml | kubectl apply -f -
 ```
 
 ### Create Ingress
