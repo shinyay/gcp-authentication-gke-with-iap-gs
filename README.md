@@ -303,6 +303,12 @@ spec:
 $ kubectl apply -f k8s/backend-config.yml
 ```
 
+```
+$ kubectl get backendconfig
+$ kubectl describe backendconfig config-default
+```
+
+
 ## Demo
 
 ## Features
