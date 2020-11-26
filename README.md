@@ -112,8 +112,21 @@ $ kubectl get pods -o wide
 ```
 
 ### 5. Create Managed Certificate
-- `k8s/certificate.yml`
-  - YOUR DOMAIN
+
+- **ManagedCertificate v1beta2 API** : For GKE cluster versions `1.15 and later`
+- **ManagedCertificate v1 API** : For GKE cluster versions `1.17.9-gke.6300 and later`
+
+Replace `YOUR_DOMAIN` in [k8s/certificate.yml](k8s/certificate.yml)
+
+```yaml
+apiVersion: networking.gke.io/v1beta2
+kind: ManagedCertificate
+metadata:
+  name: certificate
+spec:
+  domains:
+    - YOUR_DOMAIN
+```
 
 ```
 $ kubectl apply -f k8s/certificate.yml
