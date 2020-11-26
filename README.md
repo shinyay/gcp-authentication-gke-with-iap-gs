@@ -278,7 +278,9 @@ $ kubectl create secret generic secret-for-oauth \
     --from-literal=client_id=<CLIENT_ID_KEY> \
     --from-literal=client_secret=<CLIENT_SECRET_KEY>
 ```
-
+```
+$ kubectl get secret
+```
 
 
 #### Configure BackendConfig
