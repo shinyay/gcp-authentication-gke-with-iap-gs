@@ -187,12 +187,12 @@ spec:
 $ sed -e "s|STATIC_IP|XXXXX|g" k8s/ingress.yml | kubectl apply -f -
 ```
 
-#### Confirm Ingress
+#### 6.3. Confirm Ingress
 ```
 $ kubectl get ingress
 ```
 
-#### Confirm Managed Certificate
+#### 6.4. Confirm Managed Certificate
 ```
 $ kubectl describe managedcertificate certificate
 ```
