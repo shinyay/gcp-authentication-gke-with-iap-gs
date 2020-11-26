@@ -211,7 +211,7 @@ Status:
   Certificate Status:  Active
 ```
 
-#### Confirm HTTPS Access
+#### 6.5. Confirm HTTPS Access
 ```
 $ curl -X GET https://YOUR-DOMAIN/hello
 ```
