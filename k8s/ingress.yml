@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: syanagihara-cf-ip # Name of Static IP Address
+    kubernetes.io/ingress.global-static-ip-name: STATIC_IP
     networking.gke.io/managed-certificates: certificate
 spec:
   backend:
