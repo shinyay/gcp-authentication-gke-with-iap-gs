@@ -247,7 +247,16 @@ Configure the following items.
 
 ![OAuth Client ID](https://user-images.githubusercontent.com/3072734/100301172-f41f4c80-2fda-11eb-8c6e-912260c4f1dd.png)
 
+#### 7.3. OAuth Authorized Redirect URI
 
+![authorized-redirect-uri](https://user-images.githubusercontent.com/3072734/100301478-8f182680-2fdb-11eb-83f1-ca57dcf59d51.png)
+
+- **Authorized redirect URIs**
+  - `https://iap.googleapis.com/v1/oauth/clientIds/<CLIENT_ID>:handleRedirect`
+
+Download JSON
+
+![download](https://user-images.githubusercontent.com/3072734/100301626-df8f8400-2fdb-11eb-9d72-cbc1b74d5c46.png)
 
 
 ### Add Members to Identity-Aware Proxy
