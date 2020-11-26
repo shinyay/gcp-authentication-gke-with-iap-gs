@@ -135,6 +135,12 @@ spec:
 $ sed -e "s|YOUR_DOMAIN|XXXXX|g" k8s/certificate.yml | kubectl apply -f -
 ```
 
+#### 5.2. Confirm Managed Certificate
+```
+$ kubectl get managedcertificate
+$ kubectl describe managedcertificate certificate
+```
+
 ### 6. Create Ingress with Managed Certificate
 #### 6.1. Create NodePort to expose the App
 - [k8s/service-app.yml](k8s/service-app.yml)
