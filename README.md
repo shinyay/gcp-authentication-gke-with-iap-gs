@@ -91,7 +91,7 @@ $ kubectl config current-context
 $ kubectl config get-clusters
 ```
 
-#### Retrieve kubeconfig entry
+#### 3.4. Retrieve kubeconfig entry
 ```
 $ gcloud container clusters get-credentials <CLUSTER_NAME>
 ```
@@ -105,6 +105,10 @@ $ gcloud builds submit --tag gcr.io/(gcloud config get-value project)/iap-app
 ### 4.2. Deploy app to GKE
 ```
 $ sed -e "s|GCP_PROJECT|"(gcloud config get-value project)"|g" k8s/deploy-app.yml | kubectl apply -f -
+```
+
+```
+$ kubectl get pods -o wide
 ```
 
 ### 5. Create Managed Certificate
