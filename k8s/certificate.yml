@@ -4,4 +4,4 @@ metadata:
   name: certificate
 spec:
   domains:
-    - syanagihara.cf # Name of Your Domain
+    - YOUR_DOMAIN
